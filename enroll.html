@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Training Enrollment - Happy Paws</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+font-family: Arial;
+background:#f5f5f5;
+margin:0;
+}
+
+header{
+background:#4CAF50;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.enroll-box{
+background:white;
+width:400px;
+margin:40px auto;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px #ccc;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button{
+background:#4CAF50;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#2e7d32;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🐾 Pet Training Enrollment</h1>
+</header>
+
+<section class="enroll-box">
+
+<h2>Enroll Your Pet</h2>
+
+<form onsubmit="return enrollPet()">
+
+<label>Owner Name</label>
+<input type="text" id="name" required>
+
+<label>Pet Name</label>
+<input type="text" id="pet" required>
+
+<label>Select Training Level</label>
+
+<select id="level" required>
+
+<option value="">Choose Program</option>
+<option>Beginner Level - ₹1999</option>
+<option>Intermediate Level - ₹2999</option>
+<option>Advanced Level - ₹3999</option>
+
+</select>
+
+<label>Phone Number</label>
+<input type="tel" id="phone" required>
+
+<button type="submit">Confirm Enrollment</button>
+
+</form>
+
+</section>
+
+<script>
+
+function enrollPet(){
+
+let name=document.getElementById("name").value;
+let pet=document.getElementById("pet").value;
+let level=document.getElementById("level").value;
+
+alert(
+"Enrollment Successful 🐶\n\n"+
+"Owner: "+name+
+"\nPet: "+pet+
+"\nProgram: "+level
+);
+
+return false;
+
+}
+
+</script>
+
+</body>
+</html>
