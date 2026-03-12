@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet Shop - Happy Paws</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🛍️ Happy Paws Pet Shop</h1>
+<p>Everything Your Pet Needs in One Place</p>
+</header>
+
+<nav>
+<a href="Home.html">Home</a>
+<a href="about.html">About</a>
+<a href="grooming.html">Grooming</a>
+<a href="training.html">Training</a>
+<a href="doctor.html">Doctor</a>
+<a href="walking.html">Walking</a>
+<a href="shop.html">Pet Shop</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">🛒 Cart</a>
+</nav>
+
+<section class="shop-hero">
+<h2>Premium Products for Your Pets 🐶🐱</h2>
+<p>Food • Toys • Accessories • Grooming Kits</p>
+</section>
+
+<section class="products">
+
+<div class="product-card">
+<h3>🐾 Dog Food</h3>
+<p>High nutrition dry food (5kg)</p>
+<p class="price">₹1200</p>
+<button onclick="addToCart('Dog Food',1200)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🦴 Chew Toy</h3>
+<p>Durable rubber toy</p>
+<p class="price">₹350</p>
+<button onclick="addToCart('Chew Toy',350)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🛏 Pet Bed</h3>
+<p>Soft & comfortable medium size</p>
+<p class="price">₹1800</p>
+<button onclick="addToCart('Pet Bed',1800)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🧴 Grooming Kit</h3>
+<p>Shampoo + Brush + Towel</p>
+<p class="price">₹950</p>
+<button onclick="addToCart('Grooming Kit',950)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>👗 Pet Outfits</h3>
+<p>Frocks • Suits • Bows</p>
+<p class="price">₹499</p>
+<button onclick="addToCart('Pet Outfits',499)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🐱 Cat Food</h3>
+<p>Healthy nutrition meal</p>
+<p class="price">₹900</p>
+<button onclick="addToCart('Cat Food',900)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🎾 Ball Toy</h3>
+<p>Fun playing ball for pets</p>
+<p class="price">₹250</p>
+<button onclick="addToCart('Ball Toy',250)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🦮 Dog Collar</h3>
+<p>Adjustable leather collar</p>
+<p class="price">₹400</p>
+<button onclick="addToCart('Dog Collar',400)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🧸 Plush Toy</h3>
+<p>Soft teddy toy for pets</p>
+<p class="price">₹300</p>
+<button onclick="addToCart('Plush Toy',300)">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<h3>🍖 Dog Treats</h3>
+<p>Healthy snack treats</p>
+<p class="price">₹450</p>
+<button onclick="addToCart('Dog Treats',450)">Add to Cart</button>
+</div>
+
+</section>
+
+<center>
+<br>
+<a href="cart.html">
+<button>View Cart 🛒</button>
+</a>
+</center>
+
+
+
+
+<script>
+
+function addToCart(name,price){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+cart.push({name:name,price:price});
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+alert(name + " added to cart 🐾");
+
+}
+
+</script>
+
+</body>
+</html>
