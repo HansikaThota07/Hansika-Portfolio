@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet Grooming - Happy Paws</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>✂️ Pet Grooming Services</h1>
+<p>Professional Care for a Happy & Healthy Pet</p>
+</header>
+
+<nav>
+<a href="Home.html">Home</a>
+<a href="about.html">About</a>
+<a href="grooming.html">Grooming</a>
+<a href="training.html">Training</a>
+<a href="doctor.html">Doctor</a>
+<a href="walking.html">Walking</a>
+<a href="shop.html">Pet Shop</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">🛒 Cart</a>
+</nav>
+
+<section class="cards">
+
+<div class="card">
+<h3>🛁 Bath & Blow Dry</h3>
+<p>Gentle shampoo & full drying service.</p>
+<p><b>₹499</b></p>
+<button onclick="addToCart('Bath & Blow Dry',499)">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>✂ Hair Styling & Trim</h3>
+<p>Professional haircut and styling.</p>
+<p><b>₹699</b></p>
+<button onclick="addToCart('Hair Styling & Trim',699)">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>💅 Nail Clipping</h3>
+<p>Safe nail trimming & paw cleaning.</p>
+<p><b>₹199</b></p>
+<button onclick="addToCart('Nail Clipping',199)">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>👂 Ear Cleaning</h3>
+<p>Hygienic ear check & cleaning.</p>
+<p><b>₹149</b></p>
+<button onclick="addToCart('Ear Cleaning',149)">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>🦷 Teeth Brushing</h3>
+<p>Fresh breath & dental hygiene care.</p>
+<p><b>₹249</b></p>
+<button onclick="addToCart('Teeth Brushing',249)">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>✨ Full Grooming Package</h3>
+<p>Bath + Haircut + Nail + Ear + Teeth care.</p>
+<p><b>₹1299</b></p>
+<button onclick="addToCart('Full Grooming Package',1299)">Add to Cart</button>
+</div>
+
+</section>
+
+<br>
+<center>
+<a href="cart.html">
+<button>View Cart 🛒</button>
+</a>
+</center>
+
+<script>
+
+function addToCart(name,price){
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+cart.push({name:name,price:price});
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+alert(name + " added to cart 🐾");
+
+}
+
+</script>
+
+</body>
+</html>
