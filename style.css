@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6f0;
+    text-align: center;
+}
+
+header {
+    background-color: lightblue;
+    color: rgb(87, 144, 163);
+    padding: 20px;
+}
+
+nav {
+    background-color: #ffc2d1;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff8fab;
+}
+
+section {
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 230px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.card:hover{
+transform: scale(1.05);
+transition: 0.3s;
+}
+
+button {
+    background-color: #ff8fab;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input, textarea {
+    padding: 8px;
+    margin: 8px;
+    width: 250px;
+}
+.training-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.training-box {
+    background-color: #fff0f5;
+    width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    border-left: 6px solid #ff8fab;
+}
+
+.training-box ul {
+    padding-left: 20px;
+}
+
+.training-box:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.online-training {
+    background-color: #ffe5ec;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 15px;
+}
+.doctor-intro {
+    padding: 30px;
+    background-color: #fff3e6;
+}
+
+.doctor-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.doctor-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 5px solid #ff8fab;
+}
+
+.doctor-box:hover {
+    background-color: #ffe5ec;
+    transition: 0.3s;
+}
+
+.availability {
+    background-color: #ffe5ec;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 15px;
+}
+.walking-hero {
+    background-color: #e0f7fa;
+    padding: 40px;
+    text-align: center;
+}
+
+.walking-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.walk-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    border-top: 5px solid #00acc1;
+}
+
+.walk-box:hover {
+    background-color: #f1f8ff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.walk-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00acc1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.walk-btn:hover {
+    background-color: #007c91;
+}
+
+.safety {
+    background-color: #fce4ec;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 15px;
+}
+.shop-hero {
+    background-color: #fff8e1;
+    padding: 40px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 5px solid #ffb300;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.price {
+    font-weight: bold;
+    color: #e65100;
+}
+
+
+.offers {
+    background-color: #ffe0b2;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffe0b2, #fff8e1);
+}
+
+header {
+    background-color:#ff8fab;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8fab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e75480;
+}
+
+.contact-info {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
