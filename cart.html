@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Cart - Happy Paws</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🛒 Your Cart</h1>
+</header>
+
+<section>
+
+<h2>Items in Cart</h2>
+
+<ul id="cartItems"></ul>
+
+<h2>Total Amount: ₹<span id="total">0</span></h2>
+
+<button onclick="clearCart()">Clear Cart</button>
+
+</section>
+
+<script>
+
+// get items from localStorage
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let list = document.getElementById("cartItems");
+let total = 0;
+
+// display items
+cart.forEach(function(item){
+
+let li = document.createElement("li");
+
+li.textContent = item.name + " - ₹" + item.price;
+
+list.appendChild(li);
+
+total += item.price;
+
+});
+
+// display total
+document.getElementById("total").innerText = total;
+
+
+// clear cart function
+function clearCart(){
+
+localStorage.removeItem("cart");
+
+alert("Cart cleared successfully");
+
+location.reload();
+
+}
+
+</script>
+
+</body>
+</html>
